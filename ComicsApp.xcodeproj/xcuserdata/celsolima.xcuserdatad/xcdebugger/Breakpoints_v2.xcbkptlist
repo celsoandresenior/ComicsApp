@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1C9C1866-84EC-4338-9F8C-579B296AFEA9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Home/Presenter/ComicsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "updateSearchResults(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 5ccdb3ad6366142f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsPresenter.updateSearchResults(for: __C.UISearchController) -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "460">
+               </Location>
+               <Location
+                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 5ccdb3ad6366142f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsPresenter.updateSearchResults(for: __C.UISearchController) -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "524">
+               </Location>
+               <Location
+                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 69d973b71dedde72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ComicsApp.ComicsPresenter.updateSearchResults(for: __C.UISearchController) -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "254ED1FA-9777-4DE2-8CD0-060A5890DD4C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/CharacterDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C806CC3-22E3-40F7-8298-01A467DD45CB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/ComicDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFC0E9F8-4997-4122-A57A-21DCF005A2B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/ComicDetail/Presenter/ComicDetailPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "configureNavigationBar()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DFC0E9F8-4997-4122-A57A-21DCF005A2B7 - 4478f461fc6bd761"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailPresenter.configureNavigationBar() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/Presenter/ComicDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "DFC0E9F8-4997-4122-A57A-21DCF005A2B7 - 4478f461fc6bd761"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailPresenter.configureNavigationBar() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/Presenter/ComicDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "DFC0E9F8-4997-4122-A57A-21DCF005A2B7 - 4478f461fc6bd706"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailPresenter.configureNavigationBar() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/Presenter/ComicDetailPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "112EE131-1D92-4E6C-8722-B2EBC50F3A0E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Home/Presenter/ComicsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "goToShoppingCart()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "112EE131-1D92-4E6C-8722-B2EBC50F3A0E - 7d41d4b99e5a99e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsPresenter.goToShoppingCart() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "112EE131-1D92-4E6C-8722-B2EBC50F3A0E - 7d41d4b99e5a99e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsPresenter.goToShoppingCart() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "112EE131-1D92-4E6C-8722-B2EBC50F3A0E - 7d41d4b99e5a99e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsPresenter.goToShoppingCart() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E9D25CC-F2AF-4754-846F-5F058A8D4D21"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/ComicDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "save()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5E9D25CC-F2AF-4754-846F-5F058A8D4D21 - 78ba0bcad46e17a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailTableViewDataSource.save() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "5E9D25CC-F2AF-4754-846F-5F058A8D4D21 - 78ba0bcad46e17a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailTableViewDataSource.save() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  uuid = "5E9D25CC-F2AF-4754-846F-5F058A8D4D21 - 78ba0bcad46e17a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailTableViewDataSource.save() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "5E9D25CC-F2AF-4754-846F-5F058A8D4D21 - 78ba0bcad46e17a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailTableViewDataSource.save() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "5E9D25CC-F2AF-4754-846F-5F058A8D4D21 - 78ba0bcad46e1788"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailTableViewDataSource.save() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "5E9D25CC-F2AF-4754-846F-5F058A8D4D21 - 78ba0bcad46e1788"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicDetailTableViewDataSource.save() -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ComicDetail/CharacterDetailDataSource/CharacterDetailTableViewDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1AE845E9-8722-47ED-BFC8-002098AE586D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Home/CollectionViewDataSource/CollectionViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "searchingComics(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8AF2A9E-E9B2-4F92-8112-8E3F5C589DBA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/ShoppingCart/ShoppingCartDataSource/ShoppingCartDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8AF2A9E-E9B2-4F92-8112-8E3F5C589DBA - bd376258e94d9e8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ShoppingCartDataSource.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ShoppingCart/ShoppingCartDataSource/ShoppingCartDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "2224">
+               </Location>
+               <Location
+                  uuid = "E8AF2A9E-E9B2-4F92-8112-8E3F5C589DBA - bd376258e94d9e8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ShoppingCartDataSource.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ShoppingCart/ShoppingCartDataSource/ShoppingCartDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1760">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E80BF5DC-4345-4D90-A87D-8C1F28CC64C4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/ComicDetail/Views/TableViewCells/ComicButtonsTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "addComic()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD296FCC-FDBC-4128-B457-A876C9F3993F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/ComicDetail/Views/TableViewCells/ComicButtonsTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "addComic()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
