@@ -62,7 +62,10 @@ class ComicBookCollectionViewCell: UICollectionViewCell {
         activity.displayActivity(view: contentView)
         
     }
-    
+}
+
+//MARK: ComicBookCollectionViewCell
+extension ComicBookCollectionViewCell {
     //MARK: setData
     func setData(comic: Comic?){
         comicTitle.text = comic?.title
@@ -77,5 +80,4 @@ class ComicBookCollectionViewCell: UICollectionViewCell {
             self.activity.stopAnimating()
         }
     }
-    
 }

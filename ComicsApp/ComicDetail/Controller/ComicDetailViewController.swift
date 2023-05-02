@@ -20,13 +20,21 @@ class ComicDetailViewController: UIViewController {
         setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavBar()
+    }
+    
     // MARK: setup
     fileprivate func setup(){
         view.backgroundColor = .white
         presenter.controller = self
         presenter.displayLayout()
         interactor.controller = self
-        
+    }
+    
+    // MARK: setupNavBar
+    fileprivate func setupNavBar(){
         let baseNavigationController = navigationController as? BaseNavigationViewController
         baseNavigationController?.applyStyling(navTitle: "Detalhes do Comic", shouldAddBackButton: true, viewController: self)
     }

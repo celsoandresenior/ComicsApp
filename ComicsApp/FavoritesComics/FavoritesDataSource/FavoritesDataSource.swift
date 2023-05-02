@@ -36,7 +36,9 @@ class FavoritesDataSource : NSObject, UITableViewDataSource {
     }
 }
 
+// MARK: FavoritesDataSource
 extension FavoritesDataSource {
+    
     // MARK: fetchData
     func fetchData(){
         let manager = DataBaseManager()

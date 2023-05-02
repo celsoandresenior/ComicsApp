@@ -55,7 +55,7 @@ class FavoriteViewCell : UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .white
-        layoutTableViewCell()
+        displayLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -68,7 +68,8 @@ class FavoriteViewCell : UITableViewCell {
         // Configure the view for the selected state
     }
     
-    fileprivate func layoutTableViewCell(){
+    // MARK: displayLayout
+    fileprivate func displayLayout(){
         
         contentView.addSubview(comicTitle)
         contentView.addSubview(profileHolderView)

@@ -19,7 +19,7 @@ class ComicsPresenter: NSObject, UICollectionViewDelegate {
     private var searchComics: [Comic] = []
     private var dataManager: DataBaseManager = DataBaseManager()
     
-    var collectionView: UICollectionView = {
+    private(set) lazy var collectionView: UICollectionView = {
        let flowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.size.width)
         flowLayout.scrollDirection = .vertical
@@ -88,6 +88,11 @@ class ComicsPresenter: NSObject, UICollectionViewDelegate {
         }
     }
     
+    
+}
+
+//MARK: config for scroll infinite
+extension ComicsPresenter {
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
@@ -96,10 +101,9 @@ class ComicsPresenter: NSObject, UICollectionViewDelegate {
             dataSource.fetchData(pageNumber: pageCounter)
         }
     }
-    
-    
 }
 
+// MARK: ComicsPresenter - go to screens
 extension ComicsPresenter {
     
     func goToShoppingCart() {
@@ -118,10 +122,9 @@ extension ComicsPresenter {
     }
     
 }
-
+// MARK: ComicsPresenter - UISearchBar Configs and Methods
 extension ComicsPresenter: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let controller = controller else {return}
         guard let text = searchController.searchBar.text else { return }
         dataSource.searching = true
         dataSource.searchingComics(text: text)

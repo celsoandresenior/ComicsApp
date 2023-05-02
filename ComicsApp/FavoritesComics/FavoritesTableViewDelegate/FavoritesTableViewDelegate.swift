@@ -13,7 +13,6 @@ class FavoritesTableViewDelegate  : NSObject, UITableViewDelegate{
         return UITableView.automaticDimension
     }
     
-
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
     }

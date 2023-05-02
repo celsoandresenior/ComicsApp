@@ -14,8 +14,8 @@
             filePath = "ComicsApp/Home/Presenter/ComicsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "updateSearchResults(for:)"
             landmarkType = "7">
             <Locations>
@@ -172,8 +172,8 @@
             filePath = "ComicsApp/Home/Presenter/ComicsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "goToShoppingCart()"
             landmarkType = "7">
             <Locations>
@@ -347,54 +347,6 @@
             endingLineNumber = "68"
             landmarkName = "searchingComics(text:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E8AF2A9E-E9B2-4F92-8112-8E3F5C589DBA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ComicsApp/ShoppingCart/ShoppingCartDataSource/ShoppingCartDataSource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E8AF2A9E-E9B2-4F92-8112-8E3F5C589DBA - bd376258e94d9e8a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ComicsApp.ShoppingCartDataSource.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
-                  moduleName = "ComicsApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ShoppingCart/ShoppingCartDataSource/ShoppingCartDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "2224">
-               </Location>
-               <Location
-                  uuid = "E8AF2A9E-E9B2-4F92-8112-8E3F5C589DBA - bd376258e94d9e8a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ComicsApp.ShoppingCartDataSource.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
-                  moduleName = "ComicsApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/ShoppingCart/ShoppingCartDataSource/ShoppingCartDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "1760">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

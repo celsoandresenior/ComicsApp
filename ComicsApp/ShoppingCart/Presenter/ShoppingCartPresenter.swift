@@ -43,7 +43,7 @@ class ShoppingCartPresenter {
     func configureNavigationBar(){
         
         let label = UILabel()
-        label.text = "Comic Information"
+        label.text = "Carrinho de Compras"
         label.textColor = .white
         label.font = UIFont(name: heroFontName, size: titleFontSize)
         label.applyShadow(shadowColour: .black)
@@ -96,7 +96,9 @@ class ShoppingCartPresenter {
         buttonFinishBuy.addTarget(self, action: #selector(finishPayment), for: .touchUpInside)
         
     }
-    
+}
+
+extension ShoppingCartPresenter {
     // MARK: fetchData
     fileprivate func fetchData() {
         
@@ -128,7 +130,6 @@ class ShoppingCartPresenter {
                     DispatchQueue.main.async {
                         SPAlert.present(message: "Pedido finalizado com sucesso!", haptic: .success)
                         weakSelf.shoppingCartTableView.reloadData()
-                        let value = ""
                         weakSelf.buttonFinishBuy.setTitle("Não existem itens no carrinho", for: .normal)
                     }
                 }
