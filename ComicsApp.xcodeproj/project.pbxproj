@@ -203,13 +203,13 @@
 		33C3F54D29FADA2B002FDF37 /* ComicsApp */ = {
 			isa = PBXGroup;
 			children = (
-				33C3F60F2A002883002FDF37 /* FavoritesComics */,
 				33C3F54E29FADA2B002FDF37 /* AppDelegate.swift */,
 				33C3F55029FADA2B002FDF37 /* SceneDelegate.swift */,
-				33C3F5CD29FADBAB002FDF37 /* Home */,
 				33C3F59E29FADB9E002FDF37 /* Core */,
+				33C3F5CD29FADBAB002FDF37 /* Home */,
 				33C3F58029FADB8D002FDF37 /* ComicDetail */,
 				33C3F5F629FD65CB002FDF37 /* ShoppingCart */,
+				33C3F60F2A002883002FDF37 /* FavoritesComics */,
 				33C3F55729FADA2D002FDF37 /* Assets.xcassets */,
 				33C3F55929FADA2D002FDF37 /* LaunchScreen.storyboard */,
 				33C3F55C29FADA2D002FDF37 /* Info.plist */,
@@ -237,10 +237,10 @@
 		33C3F58029FADB8D002FDF37 /* ComicDetail */ = {
 			isa = PBXGroup;
 			children = (
-				33C3F58129FADB8D002FDF37 /* Presenter */,
-				33C3F58329FADB8D002FDF37 /* Controller */,
 				33C3F58529FADB8D002FDF37 /* ComicDetailTableViewDelegate */,
 				33C3F58729FADB8D002FDF37 /* ComicDetailDataSource */,
+				33C3F58129FADB8D002FDF37 /* Presenter */,
+				33C3F58329FADB8D002FDF37 /* Controller */,
 				33C3F58B29FADB8D002FDF37 /* Views */,
 				33C3F59229FADB8D002FDF37 /* Interactor */,
 			);
