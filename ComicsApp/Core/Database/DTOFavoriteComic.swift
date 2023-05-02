@@ -1,15 +1,14 @@
 //
-//  DTOComic.swift
+//  DTOFavoriteComic.swift
 //  ComicsApp
 //
-//  Created by Celso Lima on 27/04/23.
+//  Created by Celso Lima on 01/05/23.
 //
 
 import Foundation
-
 import RealmSwift
 
-class DTOComic: Object {
+class DTOFavoriteComic: Object {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var title: String = ""
     @Persisted var comicdescription: String = ""

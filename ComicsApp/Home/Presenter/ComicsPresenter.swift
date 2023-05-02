@@ -41,13 +41,13 @@ class ComicsPresenter: NSObject, UICollectionViewDelegate {
         let leftTitle = UILabel()
         leftTitle.font = UIFont(name: heroFontName, size: titleFontSize)
         leftTitle.text = "Comic"
-        leftTitle.textColor = .white // we can add some custom colours later
+        leftTitle.textColor = .white
         leftTitle.applyShadow(shadowColour: .black)
         controller?.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftTitle)
     }
     
     func displayLayout(){
-        guard let controller = controller else {return} // could add an alertview view
+        guard let controller = controller else {return}
         controller.view.addSubview(collectionView)
         collectionView.dataSource = dataSource
         collectionView.delegate = self
@@ -110,6 +110,11 @@ extension ComicsPresenter {
             let shoppingCartViewController = ShoppingCartViewController()
             self.controller?.navigationController?.pushViewController(shoppingCartViewController, animated: true)
         }
+    }
+    
+    func goToFavorites() {
+        let favoritesController = FavoritesController()
+        self.controller?.navigationController?.pushViewController(favoritesController, animated: true)
     }
     
 }

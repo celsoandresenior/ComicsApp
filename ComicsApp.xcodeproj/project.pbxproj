@@ -59,6 +59,13 @@
 		33C3F60929FEE7C8002FDF37 /* ShoppingCartTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F60829FEE7C8002FDF37 /* ShoppingCartTableViewDelegate.swift */; };
 		33C3F60B29FEEC53002FDF37 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F60A29FEEC53002FDF37 /* DoubleExtension.swift */; };
 		33C3F60E29FFFF98002FDF37 /* ButtonsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F60D29FFFF98002FDF37 /* ButtonsTableViewDelegate.swift */; };
+		33C3F6142A0028E7002FDF37 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F6132A0028E7002FDF37 /* FavoritesController.swift */; };
+		33C3F6162A00292D002FDF37 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F6152A00292D002FDF37 /* FavoritesPresenter.swift */; };
+		33C3F6182A002A3C002FDF37 /* FavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F6172A002A3C002FDF37 /* FavoritesInteractor.swift */; };
+		33C3F61B2A002EAD002FDF37 /* FavoritesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F61A2A002EAD002FDF37 /* FavoritesDataSource.swift */; };
+		33C3F61E2A002F74002FDF37 /* FavoritesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F61D2A002F74002FDF37 /* FavoritesTableViewDelegate.swift */; };
+		33C3F6202A0060D1002FDF37 /* DTOFavoriteComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F61F2A0060D1002FDF37 /* DTOFavoriteComic.swift */; };
+		33C3F6232A01276C002FDF37 /* FavoriteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F6222A01276C002FDF37 /* FavoriteViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +137,13 @@
 		33C3F60829FEE7C8002FDF37 /* ShoppingCartTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewDelegate.swift; sourceTree = "<group>"; };
 		33C3F60A29FEEC53002FDF37 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		33C3F60D29FFFF98002FDF37 /* ButtonsTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsTableViewDelegate.swift; sourceTree = "<group>"; };
+		33C3F6132A0028E7002FDF37 /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
+		33C3F6152A00292D002FDF37 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		33C3F6172A002A3C002FDF37 /* FavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesInteractor.swift; sourceTree = "<group>"; };
+		33C3F61A2A002EAD002FDF37 /* FavoritesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDataSource.swift; sourceTree = "<group>"; };
+		33C3F61D2A002F74002FDF37 /* FavoritesTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewDelegate.swift; sourceTree = "<group>"; };
+		33C3F61F2A0060D1002FDF37 /* DTOFavoriteComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOFavoriteComic.swift; sourceTree = "<group>"; };
+		33C3F6222A01276C002FDF37 /* FavoriteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +199,7 @@
 		33C3F54D29FADA2B002FDF37 /* ComicsApp */ = {
 			isa = PBXGroup;
 			children = (
+				33C3F60F2A002883002FDF37 /* FavoritesComics */,
 				33C3F54E29FADA2B002FDF37 /* AppDelegate.swift */,
 				33C3F55029FADA2B002FDF37 /* SceneDelegate.swift */,
 				33C3F5CD29FADBAB002FDF37 /* Home */,
@@ -457,6 +472,7 @@
 			children = (
 				33C3F5EE29FD4EB9002FDF37 /* DataBaseManager.swift */,
 				33C3F5F029FD4F5F002FDF37 /* DTOComic.swift */,
+				33C3F61F2A0060D1002FDF37 /* DTOFavoriteComic.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -537,6 +553,67 @@
 				33C3F60D29FFFF98002FDF37 /* ButtonsTableViewDelegate.swift */,
 			);
 			path = ButtonsTableViewDelegate;
+			sourceTree = "<group>";
+		};
+		33C3F60F2A002883002FDF37 /* FavoritesComics */ = {
+			isa = PBXGroup;
+			children = (
+				33C3F6212A012744002FDF37 /* Views */,
+				33C3F61C2A002F5C002FDF37 /* FavoritesTableViewDelegate */,
+				33C3F6192A002E8F002FDF37 /* FavoritesDataSource */,
+				33C3F6122A0028BA002FDF37 /* Interactor */,
+				33C3F6112A0028A9002FDF37 /* Controller */,
+				33C3F6102A00289D002FDF37 /* Presenter */,
+			);
+			path = FavoritesComics;
+			sourceTree = "<group>";
+		};
+		33C3F6102A00289D002FDF37 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				33C3F6152A00292D002FDF37 /* FavoritesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		33C3F6112A0028A9002FDF37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33C3F6132A0028E7002FDF37 /* FavoritesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33C3F6122A0028BA002FDF37 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				33C3F6172A002A3C002FDF37 /* FavoritesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		33C3F6192A002E8F002FDF37 /* FavoritesDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				33C3F61A2A002EAD002FDF37 /* FavoritesDataSource.swift */,
+			);
+			path = FavoritesDataSource;
+			sourceTree = "<group>";
+		};
+		33C3F61C2A002F5C002FDF37 /* FavoritesTableViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				33C3F61D2A002F74002FDF37 /* FavoritesTableViewDelegate.swift */,
+			);
+			path = FavoritesTableViewDelegate;
+			sourceTree = "<group>";
+		};
+		33C3F6212A012744002FDF37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33C3F6222A01276C002FDF37 /* FavoriteViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -686,13 +763,17 @@
 				33C3F5E229FAFDC5002FDF37 /* ComicPriceTableViewCell.swift in Sources */,
 				33C3F59929FADB8E002FDF37 /* ComicDescriptionTableViewCell.swift in Sources */,
 				33C3F59529FADB8E002FDF37 /* ComicDetailViewController.swift in Sources */,
+				33C3F6202A0060D1002FDF37 /* DTOFavoriteComic.swift in Sources */,
 				33C3F59829FADB8E002FDF37 /* ComicDetailTableViewDataSource.swift in Sources */,
 				33C3F60229FD6DB6002FDF37 /* ShoppingCartInteractor.swift in Sources */,
 				33C3F5C629FADB9F002FDF37 /* ComicBaseData.swift in Sources */,
 				33C3F5FD29FD66BF002FDF37 /* ShoppingCartPresenter.swift in Sources */,
 				33C3F5CB29FADB9F002FDF37 /* Thumbnail.swift in Sources */,
 				33C3F60629FEDDE0002FDF37 /* ShoppingCartViewCell.swift in Sources */,
+				33C3F6182A002A3C002FDF37 /* FavoritesInteractor.swift in Sources */,
+				33C3F6232A01276C002FDF37 /* FavoriteViewCell.swift in Sources */,
 				33C3F5D729FADBAB002FDF37 /* ComicsPresenter.swift in Sources */,
+				33C3F6142A0028E7002FDF37 /* FavoritesController.swift in Sources */,
 				33C3F5F129FD4F5F002FDF37 /* DTOComic.swift in Sources */,
 				33C3F5E029FAFB79002FDF37 /* Price.swift in Sources */,
 				33C3F5D929FADBAB002FDF37 /* ComicsCollectionViewCell.swift in Sources */,
@@ -705,7 +786,9 @@
 				33C3F59C29FADB8E002FDF37 /* ComicBookCollectionViewCell.swift in Sources */,
 				33C3F5E429FB012F002FDF37 /* ComicButtonsTableViewCell.swift in Sources */,
 				33C3F5C329FADB9F002FDF37 /* CodeableExtension.swift in Sources */,
+				33C3F61B2A002EAD002FDF37 /* FavoritesDataSource.swift in Sources */,
 				33C3F55129FADA2B002FDF37 /* SceneDelegate.swift in Sources */,
+				33C3F6162A00292D002FDF37 /* FavoritesPresenter.swift in Sources */,
 				33C3F5FB29FD662E002FDF37 /* ShoppingCartViewController.swift in Sources */,
 				33C3F60029FD6ADB002FDF37 /* ShoppingCartDataSource.swift in Sources */,
 				33C3F5F529FD575B002FDF37 /* StringExtension.swift in Sources */,
@@ -714,6 +797,7 @@
 				33C3F5C229FADB9F002FDF37 /* UIViewExtension.swift in Sources */,
 				33C3F5BF29FADB9F002FDF37 /* PrivateConstants.swift in Sources */,
 				33C3F5F329FD51D2002FDF37 /* IntExtension.swift in Sources */,
+				33C3F61E2A002F74002FDF37 /* FavoritesTableViewDelegate.swift in Sources */,
 				33C3F60929FEE7C8002FDF37 /* ShoppingCartTableViewDelegate.swift in Sources */,
 				33C3F5EF29FD4EB9002FDF37 /* DataBaseManager.swift in Sources */,
 				33C3F59D29FADB8E002FDF37 /* ComicDetailInteractor.swift in Sources */,

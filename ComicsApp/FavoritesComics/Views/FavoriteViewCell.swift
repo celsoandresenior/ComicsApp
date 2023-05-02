@@ -1,15 +1,14 @@
 //
-//  ShoppingCartViewCell.swift
+//  FavoriteViewCell.swift
 //  ComicsApp
 //
-//  Created by Celso Lima on 30/04/23.
+//  Created by Celso Lima on 02/05/23.
 //
 
 import UIKit
 
-
-class ShoppingCartViewCell: UITableViewCell {
-    static let identifier = "ShoppingCartViewCell"
+class FavoriteViewCell : UITableViewCell {
+    static let identifier = "FavoriteViewCell"
     
     var profileHolderView: UIView = {
         let holder = UIView()
@@ -71,8 +70,6 @@ class ShoppingCartViewCell: UITableViewCell {
     fileprivate func layoutTableViewCell(){
         
         contentView.addSubview(comicTitle)
-        contentView.addSubview(comicQuantity)
-        contentView.addSubview(comicPrice)
         contentView.addSubview(profileHolderView)
         profileHolderView.addSubview(comicImage)
         profileHolderView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10).isActive = true
@@ -90,20 +87,7 @@ class ShoppingCartViewCell: UITableViewCell {
         comicTitle.leadingAnchor.constraint(equalTo: profileHolderView.trailingAnchor, constant: 10).isActive = true
         comicTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
         comicTitle.centerYAnchor.constraint(equalTo: profileHolderView.centerYAnchor).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: comicPrice.topAnchor, constant: height + 20).isActive = true
-        
-        comicQuantity.leadingAnchor.constraint(equalTo: profileHolderView.trailingAnchor, constant: 10).isActive = true
-        comicQuantity.topAnchor.constraint(equalTo: comicTitle.bottomAnchor, constant: 10).isActive = true
-        comicQuantity.trailingAnchor.constraint(equalTo: comicPrice.leadingAnchor, constant: 10).isActive = true
-        comicQuantity.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        comicQuantity.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: comicPrice.bottomAnchor, constant: 10).isActive = true
-        
-        comicPrice.leadingAnchor.constraint(equalTo: comicQuantity.trailingAnchor, constant: 10).isActive = true
-        comicPrice.centerYAnchor.constraint(equalTo: comicQuantity.centerYAnchor).isActive = true
-        comicPrice.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
-        comicPrice.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: comicPrice.bottomAnchor, constant: 10).isActive = true
+        contentView.bottomAnchor.constraint(equalTo: comicTitle.bottomAnchor, constant: height + 20).isActive = true
         
     }
     

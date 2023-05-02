@@ -27,7 +27,7 @@ class BaseNavigationViewController: UINavigationController {
             viewController.navigationItem.leftBarButtonItem = navBarTitle(navTitle: navTitle)
         }
         if shouldAddBuyButton {
-            viewController.navigationItem.rightBarButtonItem = buyButton()
+            viewController.navigationItem.setRightBarButtonItems([ buyButton(),  favoriteButton()], animated: true)
         }
         
     }
@@ -84,6 +84,19 @@ class BaseNavigationViewController: UINavigationController {
         return UIBarButtonItem(customView: backButton)
     }
     
+    //MARK:- Back Button
+    fileprivate func favoriteButton() -> UIBarButtonItem{
+        let backButton = UIButton(type: .custom)
+        backButton.tintColor = .white
+        let image = UIImageView(image: UIImage(named: "favorito")?.withRenderingMode(.alwaysTemplate))
+        image.tintColor = .white
+        backButton.setImage(image.image, for: .normal)
+        backButton.addTarget(self, action: #selector(goToFavorites), for: .touchUpInside)
+        backButton.applyShadow(shadowColour: .black)
+        
+        return UIBarButtonItem(customView: backButton)
+    }
+    
     //MARK:- Extension Responder
     @objc fileprivate func goBack(){
         popViewController(animated: true)
@@ -92,6 +105,12 @@ class BaseNavigationViewController: UINavigationController {
     @objc fileprivate func goShoppingCart(){
         if let viewController = self.viewController as? ComicsListViewController {
             viewController.presenter.goToShoppingCart()
+        }
+    }
+    
+    @objc fileprivate func goToFavorites(){
+        if let viewController = self.viewController as? ComicsListViewController {
+            viewController.presenter.goToFavorites()
         }
     }
     

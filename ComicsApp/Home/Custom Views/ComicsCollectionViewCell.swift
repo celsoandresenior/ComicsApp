@@ -11,8 +11,12 @@ import UIKit
 class ComicsCollectionViewCell: UICollectionViewCell {
     static let identification: String = "ComicsCollectionViewCell"
     var activityIndicator = ActivityIndicator()
+    private var isFavorite: Bool = false
+    var delegate: SaveInFavorites?
+    var id: Int = 0
     
-    var heroImage: UIImageView = {
+    
+    var comicImage: UIImageView = {
         let image = UIImageView()
         image.clipsToBounds = true
         image.contentMode = .scaleToFill
@@ -22,14 +26,14 @@ class ComicsCollectionViewCell: UICollectionViewCell {
         return image
     }()
     
-    fileprivate var nameHolderView: UIView = {
+    fileprivate var comicHolderView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(white: 0, alpha: 0.7)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    var name: UILabel = {
+    var comicName: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -38,39 +42,78 @@ class ComicsCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    var favoriteButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        let image = UIImageView(image: UIImage(named: "favorito")?.withRenderingMode(.alwaysTemplate))
+        button.setImage(image.image, for: .normal)
+        button.tintColor = .green
+        button.addTarget(self, action: #selector(setFavorite), for: .touchUpInside)
+        return button
+    }()
+    
     override func layoutSubviews() {
         self.applyShadow(shadowColour: .black)
-        contentView.addSubview(heroImage)
-        heroImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10).isActive = true
-        heroImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
-        heroImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
-        heroImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
+        contentView.addSubview(comicImage)
+        comicImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10).isActive = true
+        comicImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
+        comicImage.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
+        comicImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
         
-        heroImage.addSubview(nameHolderView)
-        nameHolderView.leadingAnchor.constraint(equalTo: heroImage.leadingAnchor).isActive = true
-        nameHolderView.trailingAnchor.constraint(equalTo: heroImage.trailingAnchor).isActive = true
-        nameHolderView.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        nameHolderView.bottomAnchor.constraint(equalTo: heroImage.bottomAnchor).isActive = true
+        comicImage.addSubview(comicHolderView)
+        comicHolderView.leadingAnchor.constraint(equalTo: comicImage.leadingAnchor).isActive = true
+        comicHolderView.trailingAnchor.constraint(equalTo: comicImage.trailingAnchor).isActive = true
+        comicHolderView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        comicHolderView.bottomAnchor.constraint(equalTo: comicImage.bottomAnchor).isActive = true
         
-        nameHolderView.addSubview(name)
-        name.leadingAnchor.constraint(equalTo: nameHolderView.leadingAnchor, constant: 20).isActive = true
-        name.trailingAnchor.constraint(equalTo: nameHolderView.trailingAnchor, constant: -20).isActive = true
-        name.centerYAnchor.constraint(equalTo: nameHolderView.centerYAnchor).isActive = true
+        comicImage.addSubview(comicName)
+        comicName.leadingAnchor.constraint(equalTo: comicHolderView.leadingAnchor, constant: 20).isActive = true
+        comicName.trailingAnchor.constraint(equalTo: comicHolderView.trailingAnchor, constant: -20).isActive = true
+        comicName.centerYAnchor.constraint(equalTo: comicHolderView.centerYAnchor).isActive = true
+        
+        comicImage.addSubview(favoriteButton)
+        favoriteButton.topAnchor.constraint(equalTo: comicImage.topAnchor, constant: 0).isActive = true
+        favoriteButton.trailingAnchor.constraint(equalTo: comicImage.trailingAnchor, constant: 0).isActive = true
         
     }
     
-    func setData(comic: Comic?){
-        name.text = comic?.title
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        let image =  UIImageView(image: UIImage(named: "favorito")?.withRenderingMode(.alwaysTemplate))
+        self.favoriteButton.setImage(image.image, for: .normal)
+        self.favoriteButton.tintColor = .green
+    }
+    
+    func setData(comic: Comic?, isFavorite: Bool){
+        self.id = comic?.id ?? 0
+        self.isFavorite = isFavorite
+        self.setIconFavorite(isFavorite)
+        comicName.text = comic?.title
         activityIndicator.displayActivity(view: contentView)
         activityIndicator.startAanimating()
         guard let path = comic?.fallbackCover?.first?.path, let ext = comic?.fallbackCover?.first?.fileExtension else {
-            heroImage.image = UIImage(named: "PlaceHolder".lowercased())
+            comicImage.image = UIImage(named: "PlaceHolder".lowercased())
             activityIndicator.stopAnimating()
             return
         }
         let url = path + "." + ext
-        heroImage.sd_setImage(with: URL(string: url), placeholderImage: nil, options: .continueInBackground) { (image, error, cache, url) in
+        comicImage.sd_setImage(with: URL(string: url), placeholderImage: nil, options: .continueInBackground) { (image, error, cache, url) in
             self.activityIndicator.stopAnimating()
         }
+    }
+    
+    
+    @objc func setFavorite() {
+        isFavorite.toggle()
+        self.setIconFavorite(isFavorite)
+        self.delegate?.saveFavorite(id: id)
+    }
+    
+    
+    private func setIconFavorite(_ value: Bool) {
+        let keyImage: String = value ? "favorito-clicked" : "favorito"
+        let image =  UIImageView(image: UIImage(named: keyImage)?.withRenderingMode(.alwaysTemplate))
+        self.favoriteButton.setImage(image.image, for: .normal)
+        self.favoriteButton.tintColor = value ? .red : .green
     }
 }

@@ -8,12 +8,17 @@
 import UIKit
 import SDWebImage
 
+protocol SaveInFavorites {
+    func saveFavorite(id: Int)
+}
+
 class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
     var updateUIWithData: ((Error?) -> Void)?
     var comics = [Comic]()
     var searchComics = [Comic]()
     var searching = false
+    let dataManager = DataBaseManager()
     
     func fetchData(pageNumber: Int){
         let request = RequestHandler().getComics(pageNumber: pageNumber)
@@ -22,8 +27,6 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
                 let comicsResult = result?.apiDataSource?.comics
                 if let comics = comicsResult{
                     weakSelf.comics.append(contentsOf: comics)
-                }else{
-                    // show alert
                 }
                 
                 weakSelf.updateUIWithData?(error)
@@ -38,8 +41,10 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let index = indexPath.item
         let comic = searching ? searchComics[index] : comics[index]
+        let isFavorite = dataManager.validFavoriteComic(comic: comic)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ComicsCollectionViewCell.identification, for: indexPath) as! ComicsCollectionViewCell
-        cell.setData(comic: comic)
+        cell.setData(comic: comic, isFavorite: isFavorite)
+        cell.delegate = self
         return cell
     }
 }
@@ -64,5 +69,13 @@ extension CollectionViewDataSource {
         
         self.updateUIWithData?(nil)
         
+    }
+}
+
+extension CollectionViewDataSource: SaveInFavorites{
+    func saveFavorite(id: Int) {
+        let comics = searching ? searchComics: comics
+        guard let comic = comics.filter({ $0.id == id }).first else { return }
+        dataManager.saveFavoriteComic(comic: comic)
     }
 }

@@ -14,28 +14,28 @@
             filePath = "ComicsApp/Home/Presenter/ComicsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "updateSearchResults(for:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 5ccdb3ad6366142f"
+                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 43d23813940bbdce"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ComicsApp.ComicsPresenter.updateSearchResults(for: __C.UISearchController) -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ComicsApp.ComicsPresenter.updateSearchResults(for: __C.UISearchController) -&gt; ()"
                   moduleName = "ComicsApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "460">
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "148">
                </Location>
                <Location
-                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 5ccdb3ad6366142f"
+                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 5ccdb3ad63661580"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,12 +45,12 @@
                   urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
                   offsetFromSymbolStart = "524">
                </Location>
                <Location
-                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 69d973b71dedde72"
+                  uuid = "EDE5A3CA-2D22-445E-A36B-3975C0E9F838 - 69d973b71deddfdd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -60,8 +60,8 @@
                   urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Presenter/ComicsPresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
                   offsetFromSymbolStart = "204">
                </Location>
             </Locations>
@@ -343,8 +343,8 @@
             filePath = "ComicsApp/Home/CollectionViewDataSource/CollectionViewDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "searchingComics(text:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -427,6 +427,290 @@
             endingLineNumber = "65"
             landmarkName = "addComic()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAEBB540-A84C-4413-A5F7-475B8B15920C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Home/CollectionViewDataSource/CollectionViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "CollectionViewDataSource"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4554EB39-BC4D-4B9E-AD2A-130311B66007"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Core/Database/DataBaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "saveFavoriteComic(comic:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4554EB39-BC4D-4B9E-AD2A-130311B66007 - 9790dc507e6315be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.DataBaseManager.saveFavoriteComic(comic: ComicsApp.Comic) -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Core/Database/DataBaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2664">
+               </Location>
+               <Location
+                  uuid = "4554EB39-BC4D-4B9E-AD2A-130311B66007 - 9790dc507e6315be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.DataBaseManager.saveFavoriteComic(comic: ComicsApp.Comic) -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Core/Database/DataBaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2860">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D46EA7FA-B497-4431-B0C0-0B59A181C8FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Home/CollectionViewDataSource/CollectionViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70CE899C-17AF-4C21-932C-BF3BB494CB57"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Core/Database/DataBaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "validFavoriteComic(comic:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "70CE899C-17AF-4C21-932C-BF3BB494CB57 - 30c47135645caf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.DataBaseManager.validFavoriteComic(comic: ComicsApp.Comic) -&gt; Swift.Bool"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Core/Database/DataBaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "70CE899C-17AF-4C21-932C-BF3BB494CB57 - 30c47135645f32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.DataBaseManager.validFavoriteComic(comic: ComicsApp.Comic) -&gt; Swift.Bool"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Core/Database/DataBaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9E6302E-142F-4079-9A35-1E0E1316CDFB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Core/Database/DataBaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "saveFavoriteComic(comic:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E9E6302E-142F-4079-9A35-1E0E1316CDFB - 9790dc507e631241"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.DataBaseManager.saveFavoriteComic(comic: ComicsApp.Comic) -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Core/Database/DataBaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "868">
+               </Location>
+               <Location
+                  uuid = "E9E6302E-142F-4079-9A35-1E0E1316CDFB - 9b2625fb7ebc43d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in ComicsApp.DataBaseManager.saveFavoriteComic(comic: ComicsApp.Comic) -&gt; ()"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Core/Database/DataBaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D988885A-7A45-4E18-9845-377707033161"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComicsApp/Home/Custom Views/ComicsCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ComicsCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D988885A-7A45-4E18-9845-377707033161 - 2323eb44704ba4f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsCollectionViewCell.isFavorite.getter : Swift.Bool"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Custom%20Views/ComicsCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "D988885A-7A45-4E18-9845-377707033161 - afd159795bc2dc95"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsCollectionViewCell.isFavorite.setter : Swift.Bool"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Custom%20Views/ComicsCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "D988885A-7A45-4E18-9845-377707033161 - 4b7ec6730fabd6c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsCollectionViewCell.isFavorite.modify : Swift.Bool"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Custom%20Views/ComicsCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "D988885A-7A45-4E18-9845-377707033161 - d2095546c698321c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsCollectionViewCell.isFavorite.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Custom%20Views/ComicsCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "D988885A-7A45-4E18-9845-377707033161 - a00b8207b8620a40"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsCollectionViewCell.init(frame: __C.CGRect) -&gt; ComicsApp.ComicsCollectionViewCell"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Custom%20Views/ComicsCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "D988885A-7A45-4E18-9845-377707033161 - a666fa371049765e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComicsApp.ComicsCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ComicsApp.ComicsCollectionViewCell&gt;"
+                  moduleName = "ComicsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/celsolima/Desktop/projetos%20ios/ComicsApp/ComicsApp/Home/Custom%20Views/ComicsCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
