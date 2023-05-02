@@ -567,9 +567,9 @@
 				33C3F6212A012744002FDF37 /* Views */,
 				33C3F61C2A002F5C002FDF37 /* FavoritesTableViewDelegate */,
 				33C3F6192A002E8F002FDF37 /* FavoritesDataSource */,
-				33C3F6122A0028BA002FDF37 /* Interactor */,
-				33C3F6112A0028A9002FDF37 /* Controller */,
 				33C3F6102A00289D002FDF37 /* Presenter */,
+				33C3F6112A0028A9002FDF37 /* Controller */,
+				33C3F6122A0028BA002FDF37 /* Interactor */,
 			);
 			path = FavoritesComics;
 			sourceTree = "<group>";

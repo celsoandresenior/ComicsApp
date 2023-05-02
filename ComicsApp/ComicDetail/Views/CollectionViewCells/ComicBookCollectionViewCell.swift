@@ -9,9 +9,9 @@ import UIKit
 
 class ComicBookCollectionViewCell: UICollectionViewCell {
     
-    var activity = ActivityIndicator()
+    let activity = ActivityIndicator()
     
-    var comicBookCover: UIImageView = {
+    private(set) lazy var comicBookCover: UIImageView = {
         let cover = UIImageView()
         cover.contentMode = .scaleAspectFill
         cover.clipsToBounds = true
@@ -20,7 +20,7 @@ class ComicBookCollectionViewCell: UICollectionViewCell {
         return cover
     }()
     
-    var comicTitle: UILabel = {
+    private(set) lazy var comicTitle: UILabel = {
         let title = UILabel()
         title.translatesAutoresizingMaskIntoConstraints = false
         title.font = UIFont(name: heroFontName, size: 17)
@@ -36,14 +36,15 @@ class ComicBookCollectionViewCell: UICollectionViewCell {
         contentView.clipsToBounds = true
         self.clipsToBounds = true
         contentView.applyShadow(shadowColour: .black)
-        displayCellContent()
+        displayLayout()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    fileprivate func displayCellContent(){
+    //MARK: displayLayout
+    fileprivate func displayLayout(){
         
         contentView.addSubview(comicBookCover)
         comicBookCover.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
@@ -62,6 +63,7 @@ class ComicBookCollectionViewCell: UICollectionViewCell {
         
     }
     
+    //MARK: setData
     func setData(comic: Comic?){
         comicTitle.text = comic?.title
         activity.startAanimating()

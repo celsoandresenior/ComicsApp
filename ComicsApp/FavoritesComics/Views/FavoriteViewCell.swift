@@ -10,7 +10,7 @@ import UIKit
 class FavoriteViewCell : UITableViewCell {
     static let identifier = "FavoriteViewCell"
     
-    var profileHolderView: UIView = {
+    private(set) lazy var profileHolderView: UIView = {
         let holder = UIView()
         holder.translatesAutoresizingMaskIntoConstraints = false
         holder.clipsToBounds = true
@@ -18,13 +18,14 @@ class FavoriteViewCell : UITableViewCell {
         return holder
     }()
     
-    var comicImage: UIImageView = {
+    private(set) lazy var comicImage: UIImageView = {
         let profileImage = UIImageView()
         profileImage.translatesAutoresizingMaskIntoConstraints = false
         profileImage.clipsToBounds = true
         return profileImage
     }()
-    var comicTitle: UILabel = {
+    
+    private(set) lazy var comicTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
@@ -33,7 +34,7 @@ class FavoriteViewCell : UITableViewCell {
         return label
     }()
     
-    var comicPrice: UILabel = {
+    private(set) lazy var comicPrice: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
@@ -42,7 +43,7 @@ class FavoriteViewCell : UITableViewCell {
         return label
     }()
     
-    var comicQuantity: UILabel = {
+    private(set) lazy var comicQuantity: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black

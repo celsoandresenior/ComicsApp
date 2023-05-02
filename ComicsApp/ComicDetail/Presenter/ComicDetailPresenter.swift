@@ -14,7 +14,7 @@ class ComicDetailPresenter {
     var comicDataSource = ComicDetailTableViewDataSource()
     var comicTableViewDelegate = ComicDetailTableViewDelegate()
     
-    var comicDetailTableView: UITableView = {
+    private(set) lazy var comicDetailTableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.backgroundColor = .white // not supporting dark mode currently
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -22,6 +22,7 @@ class ComicDetailPresenter {
         return tableView
     }()
     
+    // MARK: configureNavigationBar
     func configureNavigationBar(){
         
         let label = UILabel()
@@ -47,6 +48,7 @@ class ComicDetailPresenter {
         controller?.navigationItem.leftBarButtonItems = [item1, fixedSpace, item2]
     }
     
+    // MARK: configureNavigationBar
     func displayLayout(){
         
         guard let controller = controller else {return}
@@ -66,6 +68,7 @@ class ComicDetailPresenter {
         
     }
     
+    // MARK: configureNavigationBar
     fileprivate func registerTableViewCells(){
         comicDetailTableView.register(ComicHeaderTableViewCell.self, forCellReuseIdentifier: ComicHeaderTableViewCell.identifier)
         comicDetailTableView.register(ComicDescriptionTableViewCell.self, forCellReuseIdentifier: ComicDescriptionTableViewCell.identifier)
@@ -74,8 +77,11 @@ class ComicDetailPresenter {
     }
 }
 
+// MARK: extension ComicDetailPresenter
 extension ComicDetailPresenter: ButtonsTableViewDelegate {
-    func save() {
+    
+    // MARK: saveToShoppingCart
+    func saveToShoppingCart() {
         guard let comic = controller?.comic else { return }
         let database = DataBaseManager()
         database.saveToShoppingCart(comic: comic)

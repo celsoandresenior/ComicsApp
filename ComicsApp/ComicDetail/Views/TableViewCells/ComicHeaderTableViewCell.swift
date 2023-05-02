@@ -10,7 +10,7 @@ import UIKit
 class ComicHeaderTableViewCell: UITableViewCell {
     static let identifier = "ComicHeaderTableViewCell"
     
-    var profileHolderView: UIView = {
+    private(set) lazy var profileHolderView: UIView = {
         let holder = UIView()
         holder.translatesAutoresizingMaskIntoConstraints = false
         holder.clipsToBounds = true
@@ -18,13 +18,14 @@ class ComicHeaderTableViewCell: UITableViewCell {
         return holder
     }()
     
-    var profileImage: UIImageView = {
+    private(set) lazy var profileImage: UIImageView = {
         let profileImage = UIImageView()
         profileImage.translatesAutoresizingMaskIntoConstraints = false
         profileImage.clipsToBounds = true
         return profileImage
     }()
-    var nameOfHero: UILabel = {
+    
+    private(set) lazy var nameOfHero: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
@@ -36,7 +37,7 @@ class ComicHeaderTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .white
-        layoutTableViewCell()
+        displayLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -49,7 +50,8 @@ class ComicHeaderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    fileprivate func layoutTableViewCell(){
+    // MARK: displayLayout
+    fileprivate func displayLayout(){
         
         contentView.addSubview(nameOfHero)
         contentView.addSubview(profileHolderView)

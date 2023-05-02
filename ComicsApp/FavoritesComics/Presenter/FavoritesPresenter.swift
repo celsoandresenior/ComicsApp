@@ -13,7 +13,7 @@ class FavoritesPresenter {
     var favoritesDataSource = FavoritesDataSource()
     var favoritesTableViewDelegate = FavoritesTableViewDelegate()
     
-    var favoritesTableView: UITableView = {
+    private(set) lazy var favoritesTableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.backgroundColor = .white
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -21,8 +21,7 @@ class FavoritesPresenter {
         return tableView
     }()
 
-    
-    
+    // MARK: configureNavigationBar
     func configureNavigationBar(){
         
         let label = UILabel()
@@ -48,8 +47,8 @@ class FavoritesPresenter {
         controller?.navigationItem.leftBarButtonItems = [item1, fixedSpace, item2]
     }
     
+    // MARK: displayLayout
     func displayLayout(){
-        
         guard let controller = controller else {return}
         controller.view.addSubview(favoritesTableView)
         
@@ -65,6 +64,7 @@ class FavoritesPresenter {
         self.fetchData()
     }
     
+    // MARK: fetchData
     fileprivate func fetchData() {
         
         favoritesDataSource.updateUIWithData = { [weak self] (error) in
@@ -78,7 +78,7 @@ class FavoritesPresenter {
         favoritesDataSource.fetchData()
     }
     
-    
+    // MARK: registerTableViewCells
     fileprivate func registerTableViewCells(){
         favoritesTableView.register(ShoppingCartViewCell.self, forCellReuseIdentifier: ShoppingCartViewCell.identifier)
         

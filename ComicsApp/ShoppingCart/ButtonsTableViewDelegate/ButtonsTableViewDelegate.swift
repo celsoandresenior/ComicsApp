@@ -7,5 +7,5 @@
 
 import Foundation
 protocol ButtonsTableViewDelegate {
-    func save()
+    func saveToShoppingCart()
 }

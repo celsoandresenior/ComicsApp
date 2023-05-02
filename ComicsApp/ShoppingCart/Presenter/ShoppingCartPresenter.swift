@@ -14,7 +14,7 @@ class ShoppingCartPresenter {
     var shoppingCartDataSource = ShoppingCartDataSource()
     var shoppingCartTableViewDelegate = ShoppingCartTableViewDelegate()
     
-    var shoppingCartTableView: UITableView = {
+    private(set) lazy var shoppingCartTableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.backgroundColor = .white
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -22,14 +22,14 @@ class ShoppingCartPresenter {
         return tableView
     }()
     
-    var viewFinishBuy: UIView = {
+    private(set) lazy var viewFinishBuy: UIView = {
         let uiview = UIView(frame: .zero)
         uiview.translatesAutoresizingMaskIntoConstraints = false
         uiview.backgroundColor = .red
         return uiview
     }()
     
-    var buttonFinishBuy: UIButton = {
+    private(set) lazy var buttonFinishBuy: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("finalizar compra", for: .normal)
@@ -39,7 +39,7 @@ class ShoppingCartPresenter {
         return button
     }()
     
-    
+    // MARK: configureNavigationBar
     func configureNavigationBar(){
         
         let label = UILabel()
@@ -54,7 +54,6 @@ class ShoppingCartPresenter {
         let image = UIImageView(image: UIImage(named: "BackButton")?.withRenderingMode(.alwaysTemplate))
         image.tintColor = .white
         backButton.setImage(image.image, for: .normal)
-        //backButton.addTarget(controller?.interactor, action: #selector(controller?.interactor.popViewController), for: .touchUpInside)
         backButton.applyShadow(shadowColour: .black)
         
         let item1 = UIBarButtonItem(customView: backButton)
@@ -65,6 +64,7 @@ class ShoppingCartPresenter {
         controller?.navigationItem.leftBarButtonItems = [item1, fixedSpace, item2]
     }
     
+    // MARK: displayLayout
     func displayLayout(){
         
         guard let controller = controller else {return}
@@ -97,6 +97,7 @@ class ShoppingCartPresenter {
         
     }
     
+    // MARK: fetchData
     fileprivate func fetchData() {
         
         shoppingCartDataSource.updateUIWithData = { [weak self] (error) in
@@ -113,12 +114,13 @@ class ShoppingCartPresenter {
         shoppingCartDataSource.fetchData()
     }
     
-    
+    // MARK: registerTableViewCells
     fileprivate func registerTableViewCells(){
         shoppingCartTableView.register(ShoppingCartViewCell.self, forCellReuseIdentifier: ShoppingCartViewCell.identifier)
         
     }
     
+    // MARK: finishPayment
     @objc fileprivate func finishPayment() {
         if let dtoComics = shoppingCartDataSource.dtoComics, !dtoComics.isEmpty {
             shoppingCartDataSource.updateUIWithData = { [weak self] (error) in

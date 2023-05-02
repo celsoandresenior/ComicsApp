@@ -12,32 +12,18 @@ class ShoppingCartDataSource: NSObject, UITableViewDataSource {
     var dtoComics: [DTOComic]?
     var total: Double = 0
     
-    func fetchData(){
-        let manager = DataBaseManager()
-        self.dtoComics = Array( manager.getComics() )
-        
-        
-        
-        self.dtoComics?.forEach({ dto in
-            total += Double(dto.quantity) * dto.price.toDouble()
-        })
-        self.updateUIWithData?(nil)
-        
-    }
-    
-    func cleanDatabase() {
-        let manager = DataBaseManager()
-        manager.cleanDatabase()
-        dtoComics?.removeAll()
-        self.updateUIWithData?(nil)
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dtoComics?.count ?? 0
+        guard let dtoComics = dtoComics else { return 0 }
+        if dtoComics.isEmpty {
+            self.setEmptyImage(tableView)
+            return 0
+        } else {
+            return dtoComics.count
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,4 +36,36 @@ class ShoppingCartDataSource: NSObject, UITableViewDataSource {
         cell.comicPrice.text = "$ \(dtoComic.price)"
         return cell
     }
+}
+
+// MARK: extension ShoppingCartDataSource
+extension ShoppingCartDataSource {
+    // MARK: setup
+    func fetchData(){
+        let manager = DataBaseManager()
+        self.dtoComics = Array( manager.getComics() )
+        self.dtoComics?.forEach({ dto in
+            total += Double(dto.quantity) * dto.price.toDouble()
+        })
+        self.updateUIWithData?(nil)
+    }
+    
+    // MARK: cleanDatabase
+    func cleanDatabase() {
+        let manager = DataBaseManager()
+        manager.cleanDatabase()
+        dtoComics?.removeAll()
+        self.updateUIWithData?(nil)
+    }
+    
+    // MARK: setEmptyImage
+    private func setEmptyImage(_ tableView: UITableView) {
+        let image = UIImage(named: "homem de ferro")?.scale(newWidth: tableView.bounds.width/3)
+        let noDataImage = UIImageView(image: image)
+        noDataImage.contentMode = UIView.ContentMode.scaleAspectFill
+        noDataImage.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: tableView.frame.height)
+        tableView.backgroundView = noDataImage
+        tableView.separatorStyle = .none
+    }
+    
 }

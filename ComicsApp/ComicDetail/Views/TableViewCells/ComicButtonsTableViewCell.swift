@@ -11,7 +11,7 @@ class ComicButtonsTableViewCell: UITableViewCell {
     static let identifier = "ComicButtonsTableViewCell"
     var delegate: ButtonsTableViewDelegate?
     
-    var buyButton: UIButton = {
+    private(set) lazy var buyButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Adicionar ao carrinho de compras", for: .normal)
@@ -44,7 +44,7 @@ class ComicButtonsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    //MARK:- Layout
+    //MARK:- displayLayout
     fileprivate func displayLayout(){
         
         contentView.addSubview(buyButton)
@@ -56,10 +56,12 @@ class ComicButtonsTableViewCell: UITableViewCell {
     
 }
 
+//MARK:- ComicButtonsTableViewCell
 extension ComicButtonsTableViewCell {
     
+    //MARK:- addComic
     @objc func addComic() {
-        self.delegate?.save()
+        self.delegate?.saveToShoppingCart()
         self.buyButton.isUserInteractionEnabled = false
         Timer.scheduledTimer(withTimeInterval: 3, repeats: false, block: { _ in
             self.buyButton.isUserInteractionEnabled = true

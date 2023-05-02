@@ -10,7 +10,7 @@ import UIKit
 class ComicDescriptionTableViewCell: UITableViewCell {
     static let identifier = "ComicDescriptionTableViewCell"
     
-    var descriptionLabel: UILabel = {
+    private(set) lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 15, weight: .light)

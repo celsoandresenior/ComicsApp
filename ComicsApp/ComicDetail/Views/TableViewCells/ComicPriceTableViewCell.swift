@@ -10,7 +10,7 @@ import UIKit
 class ComicPriceTableViewCell: UITableViewCell {
     static let identifier = "ComicPriceTableViewCell"
     
-    var priceLabel: UILabel = {
+    private(set) lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 15, weight: .light)
@@ -34,7 +34,7 @@ class ComicPriceTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    //MARK:- Layout
+    //MARK:- displayLayout
     fileprivate func displayLayout(){
         
         contentView.addSubview(priceLabel)

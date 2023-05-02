@@ -12,26 +12,6 @@ class FavoritesDataSource : NSObject, UITableViewDataSource {
     var dtoComics: [DTOFavoriteComic]?
     var total: Double = 0
     
-    func fetchData(){
-        let manager = DataBaseManager()
-        self.dtoComics = Array( manager.getFavoriteComics() )
-        
-        
-        
-        self.dtoComics?.forEach({ dto in
-            total += Double(dto.quantity) * dto.price.toDouble()
-        })
-        self.updateUIWithData?(nil)
-        
-    }
-    
-    func cleanDatabase() {
-        let manager = DataBaseManager()
-        manager.cleanDatabase()
-        dtoComics?.removeAll()
-        self.updateUIWithData?(nil)
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -57,6 +37,18 @@ class FavoritesDataSource : NSObject, UITableViewDataSource {
 }
 
 extension FavoritesDataSource {
+    // MARK: fetchData
+    func fetchData(){
+        let manager = DataBaseManager()
+        self.dtoComics = Array( manager.getFavoriteComics() )
+        self.dtoComics?.forEach({ dto in
+            total += Double(dto.quantity) * dto.price.toDouble()
+        })
+        self.updateUIWithData?(nil)
+        
+    }
+    
+    // MARK: setEmptyImage
     private func setEmptyImage(_ tableView: UITableView) {
         let image = UIImage(named: "spider-man")?.scale(newWidth: tableView.bounds.width/3)
         let noDataImage = UIImageView(image: image)

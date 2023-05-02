@@ -16,7 +16,7 @@ class ComicsCollectionViewCell: UICollectionViewCell {
     var id: Int = 0
     
     
-    var comicImage: UIImageView = {
+    private(set) lazy var comicImage: UIImageView = {
         let image = UIImageView()
         image.clipsToBounds = true
         image.contentMode = .scaleToFill
@@ -26,14 +26,14 @@ class ComicsCollectionViewCell: UICollectionViewCell {
         return image
     }()
     
-    fileprivate var comicHolderView: UIView = {
+    private(set) lazy var comicHolderView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(white: 0, alpha: 0.7)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    var comicName: UILabel = {
+    private(set) lazy var comicName: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +42,7 @@ class ComicsCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    var favoriteButton: UIButton = {
+    private(set) lazy var favoriteButton: UIButton = {
         let button = UIButton(type: .custom)
         button.translatesAutoresizingMaskIntoConstraints = false
         let image = UIImageView(image: UIImage(named: "favorito")?.withRenderingMode(.alwaysTemplate))
@@ -52,6 +52,7 @@ class ComicsCollectionViewCell: UICollectionViewCell {
         return button
     }()
     
+    // MARK: layoutSubviews
     override func layoutSubviews() {
         self.applyShadow(shadowColour: .black)
         contentView.addSubview(comicImage)
@@ -77,6 +78,7 @@ class ComicsCollectionViewCell: UICollectionViewCell {
         
     }
     
+    // MARK: prepareForReuse
     override func prepareForReuse() {
         super.prepareForReuse()
         let image =  UIImageView(image: UIImage(named: "favorito")?.withRenderingMode(.alwaysTemplate))
@@ -84,6 +86,7 @@ class ComicsCollectionViewCell: UICollectionViewCell {
         self.favoriteButton.tintColor = .green
     }
     
+    // MARK: setData
     func setData(comic: Comic?, isFavorite: Bool){
         self.id = comic?.id ?? 0
         self.isFavorite = isFavorite
@@ -102,14 +105,14 @@ class ComicsCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    
+    // MARK: setFavorite
     @objc func setFavorite() {
         isFavorite.toggle()
         self.setIconFavorite(isFavorite)
         self.delegate?.saveFavorite(id: id)
     }
     
-    
+    // MARK: setIconFavorite
     private func setIconFavorite(_ value: Bool) {
         let keyImage: String = value ? "favorito-clicked" : "favorito"
         let image =  UIImageView(image: UIImage(named: keyImage)?.withRenderingMode(.alwaysTemplate))

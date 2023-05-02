@@ -20,6 +20,7 @@ class ShoppingCartViewController: UIViewController {
         setup()
     }
     
+    // MARK: setup
     fileprivate func setup(){
         view.backgroundColor = .white
         presenter.controller = self
