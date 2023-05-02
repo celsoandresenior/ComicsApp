@@ -8,9 +8,7 @@
 import UIKit
 import SDWebImage
 
-protocol SaveInFavorites {
-    func saveFavorite(id: Int)
-}
+
 
 class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
     
@@ -72,7 +70,7 @@ extension CollectionViewDataSource {
     }
 }
 
-extension CollectionViewDataSource: SaveInFavorites{
+extension CollectionViewDataSource: ComicsCollectionCellDelegate {
     func saveFavorite(id: Int) {
         let comics = searching ? searchComics: comics
         guard let comic = comics.filter({ $0.id == id }).first else { return }

@@ -12,7 +12,7 @@ class ComicsCollectionViewCell: UICollectionViewCell {
     static let identification: String = "ComicsCollectionViewCell"
     var activityIndicator = ActivityIndicator()
     private var isFavorite: Bool = false
-    var delegate: SaveInFavorites?
+    var delegate: ComicsCollectionCellDelegate?
     var id: Int = 0
     
     
