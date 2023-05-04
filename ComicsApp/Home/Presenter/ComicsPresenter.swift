@@ -51,7 +51,7 @@ class ComicsPresenter: NSObject, UICollectionViewDelegate {
         controller.view.addSubview(collectionView)
         collectionView.dataSource = dataSource
         collectionView.delegate = self
-        collectionView.register(ComicsCollectionViewCell.self, forCellWithReuseIdentifier: ComicsCollectionViewCell.identification)
+        collectionView.register(ComicsCollectionViewCell.self, forCellWithReuseIdentifier: ComicsCollectionViewCell.identifier)
         collectionView.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: controller.view.leadingAnchor).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: controller.view.trailingAnchor).isActive = true
         collectionView.topAnchor.constraint(equalTo: controller.view.topAnchor).isActive = true

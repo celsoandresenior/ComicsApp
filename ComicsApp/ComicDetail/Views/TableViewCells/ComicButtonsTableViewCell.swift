@@ -8,7 +8,7 @@
 import UIKit
 
 class ComicButtonsTableViewCell: UITableViewCell {
-    static let identifier = "ComicButtonsTableViewCell"
+    static let identifier: String = String(describing: ComicButtonsTableViewCell.self)
     var delegate: ButtonsTableViewDelegate?
     
     private(set) lazy var buyButton: UIButton = {
@@ -26,8 +26,6 @@ class ComicButtonsTableViewCell: UITableViewCell {
         
         return button
     }()
-    
-    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -51,9 +49,7 @@ class ComicButtonsTableViewCell: UITableViewCell {
         buyButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
         buyButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
         buyButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        
     }
-    
 }
 
 //MARK:- ComicButtonsTableViewCell

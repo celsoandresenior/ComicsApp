@@ -40,7 +40,7 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource {
         let index = indexPath.item
         let comic = searching ? searchComics[index] : comics[index]
         let isFavorite = dataManager.validFavoriteComic(comic: comic)
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ComicsCollectionViewCell.identification, for: indexPath) as! ComicsCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ComicsCollectionViewCell.identifier, for: indexPath) as! ComicsCollectionViewCell
         cell.setData(comic: comic, isFavorite: isFavorite)
         cell.delegate = self
         return cell

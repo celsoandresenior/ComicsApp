@@ -8,7 +8,7 @@
 import UIKit
 
 class ComicHeaderTableViewCell: UITableViewCell {
-    static let identifier = "ComicHeaderTableViewCell"
+    static let identifier: String = String(describing: ComicHeaderTableViewCell.self)
     
     private(set) lazy var profileHolderView: UIView = {
         let holder = UIView()

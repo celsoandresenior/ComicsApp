@@ -8,7 +8,7 @@
 import UIKit
 
 class ComicPriceTableViewCell: UITableViewCell {
-    static let identifier = "ComicPriceTableViewCell"
+    static let identifier: String = String(describing: ComicPriceTableViewCell.self)
     
     private(set) lazy var priceLabel: UILabel = {
         let label = UILabel()

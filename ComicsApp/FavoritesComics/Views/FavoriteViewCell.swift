@@ -8,7 +8,7 @@
 import UIKit
 
 class FavoriteViewCell : UITableViewCell {
-    static let identifier = "FavoriteViewCell"
+    static let identifier: String = String(describing: FavoriteViewCell.self)
     
     private(set) lazy var profileHolderView: UIView = {
         let holder = UIView()

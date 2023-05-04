@@ -9,7 +9,8 @@
 import UIKit
 
 class ComicsCollectionViewCell: UICollectionViewCell {
-    static let identification: String = "ComicsCollectionViewCell"
+    
+    static let identifier: String = String(describing: ComicsCollectionViewCell.self)
     var activityIndicator = ActivityIndicator()
     private var isFavorite: Bool = false
     var delegate: ComicsCollectionCellDelegate?

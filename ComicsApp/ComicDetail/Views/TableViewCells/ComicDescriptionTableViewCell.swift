@@ -8,7 +8,8 @@
 import UIKit
 
 class ComicDescriptionTableViewCell: UITableViewCell {
-    static let identifier = "ComicDescriptionTableViewCell"
+    
+    static let identifier: String = String(describing: ComicDescriptionTableViewCell.self)
     
     private(set) lazy var descriptionLabel: UILabel = {
         let label = UILabel()

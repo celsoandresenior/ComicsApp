@@ -9,7 +9,7 @@ import UIKit
 
 
 class ShoppingCartViewCell: UITableViewCell {
-    static let identifier = "ShoppingCartViewCell"
+    static let identifier: String = String(describing: ShoppingCartViewCell.self)
     
     var profileHolderView: UIView = {
         let holder = UIView()

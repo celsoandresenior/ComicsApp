@@ -8,7 +8,7 @@
 import UIKit
 
 class ComicBookCollectionViewCell: UICollectionViewCell {
-    
+    static let identifier: String = String(describing: ComicBookCollectionViewCell.self)
     let activity = ActivityIndicator()
     
     private(set) lazy var comicBookCover: UIImageView = {
