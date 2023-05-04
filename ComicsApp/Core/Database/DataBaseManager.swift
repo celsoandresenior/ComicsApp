@@ -58,12 +58,7 @@ class DataBaseManager {
     }
     
     func validFavoriteComic(comic: Comic) -> Bool {
-
-        if let element = realm.objects(DTOFavoriteComic.self).filter("comicId == '\(comic.id?.toString() ?? "")' ").first {
-            return true
-        } else {
-            return false
-        }
+        return realm.objects(DTOFavoriteComic.self).filter("comicId == '\(comic.id?.toString() ?? "")' ").first != nil ? true : false
     }
     
     func cleanDatabase() {

@@ -105,7 +105,6 @@ extension ShoppingCartPresenter {
         shoppingCartDataSource.updateUIWithData = { [weak self] (error) in
             if let weakSelf = self, error == nil{
                 DispatchQueue.main.async {
-                    //weakSelf.activityIndicator.stopAnimating()
                     weakSelf.shoppingCartTableView.reloadData()
                     let value = weakSelf.shoppingCartDataSource.total.toCurrent()
                     weakSelf.buttonFinishBuy.setTitle("finalizar compra $ \(value)", for: .normal)
@@ -119,7 +118,6 @@ extension ShoppingCartPresenter {
     // MARK: registerTableViewCells
     fileprivate func registerTableViewCells(){
         shoppingCartTableView.register(ShoppingCartViewCell.self, forCellReuseIdentifier: ShoppingCartViewCell.identifier)
-        
     }
     
     // MARK: finishPayment
@@ -130,7 +128,7 @@ extension ShoppingCartPresenter {
                     DispatchQueue.main.async {
                         SPAlert.present(message: "Pedido finalizado com sucesso!", haptic: .success)
                         weakSelf.shoppingCartTableView.reloadData()
-                        weakSelf.buttonFinishBuy.setTitle("Não existem itens no carrinho", for: .normal)
+                        weakSelf.buttonFinishBuy.setTitle("Voltar a Home", for: .normal)
                     }
                 }
             }

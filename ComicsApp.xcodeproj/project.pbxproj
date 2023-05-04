@@ -20,7 +20,6 @@
 		33C3F59829FADB8E002FDF37 /* ComicDetailTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F58A29FADB8D002FDF37 /* ComicDetailTableViewDataSource.swift */; };
 		33C3F59929FADB8E002FDF37 /* ComicDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F58D29FADB8D002FDF37 /* ComicDescriptionTableViewCell.swift */; };
 		33C3F59B29FADB8E002FDF37 /* ComicHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F58F29FADB8D002FDF37 /* ComicHeaderTableViewCell.swift */; };
-		33C3F59C29FADB8E002FDF37 /* ComicBookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F59129FADB8D002FDF37 /* ComicBookCollectionViewCell.swift */; };
 		33C3F59D29FADB8E002FDF37 /* ComicDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F59329FADB8D002FDF37 /* ComicDetailInteractor.swift */; };
 		33C3F5BC29FADB9F002FDF37 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F5A029FADB9E002FDF37 /* Hash.swift */; };
 		33C3F5BD29FADB9F002FDF37 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3F5A229FADB9F002FDF37 /* RequestHandler.swift */; };
@@ -105,7 +104,6 @@
 		33C3F58A29FADB8D002FDF37 /* ComicDetailTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicDetailTableViewDataSource.swift; sourceTree = "<group>"; };
 		33C3F58D29FADB8D002FDF37 /* ComicDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		33C3F58F29FADB8D002FDF37 /* ComicHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		33C3F59129FADB8D002FDF37 /* ComicBookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicBookCollectionViewCell.swift; sourceTree = "<group>"; };
 		33C3F59329FADB8D002FDF37 /* ComicDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicDetailInteractor.swift; sourceTree = "<group>"; };
 		33C3F5A029FADB9E002FDF37 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
 		33C3F5A229FADB9F002FDF37 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
@@ -283,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				33C3F58C29FADB8D002FDF37 /* TableViewCells */,
-				33C3F59029FADB8D002FDF37 /* CollectionViewCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,14 +294,6 @@
 				33C3F5E329FB012F002FDF37 /* ComicButtonsTableViewCell.swift */,
 			);
 			path = TableViewCells;
-			sourceTree = "<group>";
-		};
-		33C3F59029FADB8D002FDF37 /* CollectionViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				33C3F59129FADB8D002FDF37 /* ComicBookCollectionViewCell.swift */,
-			);
-			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 		33C3F59229FADB8D002FDF37 /* Interactor */ = {
@@ -798,7 +787,6 @@
 				33C3F54F29FADA2B002FDF37 /* AppDelegate.swift in Sources */,
 				33C3F5D829FADBAB002FDF37 /* ComicsListViewController.swift in Sources */,
 				33C3F5BE29FADB9F002FDF37 /* Constants.swift in Sources */,
-				33C3F59C29FADB8E002FDF37 /* ComicBookCollectionViewCell.swift in Sources */,
 				33C3F5E429FB012F002FDF37 /* ComicButtonsTableViewCell.swift in Sources */,
 				33C3F5C329FADB9F002FDF37 /* CodeableExtension.swift in Sources */,
 				33C3F61B2A002EAD002FDF37 /* FavoritesDataSource.swift in Sources */,
